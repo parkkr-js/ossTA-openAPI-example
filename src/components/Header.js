@@ -12,7 +12,9 @@ function Header({ isWeekly, setIsWeekly }) {
           flexDirection={{ base: "column", md: "row" }}
         >
           <Heading color="white" size="lg" mb={{ base: 4, md: 0 }}>
-            {isWeekly ? "Weekly Box Office" : "Daily Box Office"}
+            {isWeekly
+              ? "Weekly Box Office(Top 10)"
+              : "Daily Box Office(Top 10)"}
           </Heading>
           <Flex
             gap={4}
