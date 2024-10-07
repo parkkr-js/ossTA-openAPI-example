@@ -4,7 +4,7 @@ module.exports = function (app) {
   app.use(
     "/api",
     createProxyMiddleware({
-      target: "http://api.koreafilm.or.kr",
+      target: "https://api.koreafilm.or.kr",
       changeOrigin: true,
       pathRewrite: {
         "^/api": "",
