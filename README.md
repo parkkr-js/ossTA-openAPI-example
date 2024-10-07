@@ -1,71 +1,77 @@
-# Getting Started with Create React App
+# OSS Movie API Web Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a web application for displaying box office information using open APIs such as KMDB and KOBIS. It provides up-to-date movie data and rankings.
 
-## Available Scripts
+## Project Overview
 
-In the project directory, you can run:
+This web application uses several movie-related open APIs to fetch and display data such as weekly and daily box office rankings. It was created as a reference for the 2024 2nd semester "Open Source Studio" course.
 
-### `npm start`
+## Live Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+You can access the live version of the web application here:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+[Live Demo](https://oss-ta-open-api-example.vercel.app/)
 
-### `npm test`
+## APIs Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This project makes use of the following public APIs to gather movie data:
 
-### `npm run build`
+- **KMDB (Korean Movie Database)**: [KMDB API](https://www.kmdb.or.kr/main)
+- **KOBIS (Korean Box Office Information System)**: [KOBIS Open API](https://www.kobis.or.kr/kobisopenapi/homepg/main/main.do)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Weekly and Daily Box Office Rankings**: Displays both weekly and daily movie rankings retrieved from the KOBIS API.
+- **Search Functionality**: Allows users to search for specific movies by title using KMDB API.
+- **Responsive Design**: Built using Chakra UI for responsive and modern user interfaces.
+- **Movie Details**: Displays detailed information about each movie, including director, cast, release date, and more.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Technologies Used
 
-### `npm run eject`
+- **React**: Frontend library for building user interfaces.
+- **Chakra UI**: A simple, modular, and accessible component library for React.
+- **Axios**: For making HTTP requests to external APIs.
+- **Framer Motion**: For adding smooth animations and transitions.
+- **React Router**: For client-side routing.
+- **Vercel**: Used for deployment.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Installation
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Clone the repository:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   ```bash
+   git clone https://github.com/your-username/oss-movie-api.git
+   cd oss-movie-api
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. Install dependencies:
 
-## Learn More
+   ```bash
+   npm install
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. Start the development server:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ```bash
+   npm start
+   ```
 
-### Code Splitting
+The app will be running on `http://localhost:3000`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Deployment
 
-### Analyzing the Bundle Size
+This project is deployed using Vercel. You can view the live deployment at:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+[https://oss-ta-open-api-example.vercel.app/](https://oss-ta-open-api-example.vercel.app/)
 
-### Making a Progressive Web App
+## Contribution
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Feel free to submit issues or pull requests. Contributions are welcome!
 
-### Advanced Configuration
+## Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+This project was created by **박지성 TA** as part of the **2024 2학기 오픈소스 스튜디오** 수업 참고자료.
 
-### Deployment
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# ossTA-openAPI-example
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
