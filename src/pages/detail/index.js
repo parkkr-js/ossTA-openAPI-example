@@ -30,7 +30,7 @@ function Detail() {
   const fetchMovieDetail = async () => {
     try {
       const response = await axios.get(
-        `/api/openapi-data2/wisenut/search_api/search_json2.jsp?collection=kmdb_new2&detail=Y&title=${title}&ServiceKey=${process.env.REACT_APP_KMDB_SCREAT_KEY}`
+        `https://api.koreafilm.or.kr/openapi-data2/wisenut/search_api/search_json2.jsp?collection=kmdb_new2&detail=Y&title=${title}&ServiceKey=${process.env.REACT_APP_KMDB_SCREAT_KEY}`
       );
       let result = response.data.Data[0].Result[0];
 
