@@ -11,7 +11,7 @@ const Home = () => {
   const [loading, setLoading] = useState(true);
   const [isWeekly, setIsWeekly] = useState(true);
   const currentDate = new Date();
-  currentDate.setDate(currentDate.getDate() - 5);
+  currentDate.setDate(currentDate.getDate() - 7);
   const targetDt = currentDate.toISOString().slice(0, 10).replace(/-/g, "");
 
   const fetchWeeklyMovies = async () => {
